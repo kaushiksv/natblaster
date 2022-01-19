@@ -45,7 +45,7 @@ errorcode resolveIP(char *ip_or_name, ip_t *ip) {
 	if (hp->h_addr==NULL)
 		return ERROR_1;
 
-	memcpy(ip,hp->h_addr,sizeof(ip));
+	memcpy(ip,hp->h_addr,sizeof(*ip));
 	if (*ip==-1)
 		return ERROR_2;
 

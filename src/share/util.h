@@ -34,7 +34,9 @@
  * @param x The number to decrement
  * @return The decremented value
  **/
-int inline DEC_UNTIL_ZERO(int x);
+int inline DEC_UNTIL_ZERO(int x) {
+        return (x>=1 ? x-1 : 0);
+}
 
 /** @brief a macro to determine if two boolean values are the same (ie both
  *  true or both false */

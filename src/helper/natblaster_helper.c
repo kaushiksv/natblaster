@@ -38,7 +38,7 @@ int natblaster_server(port_t listen_port) {
 	observed_data_t data;
 	sock_t this_sd;
 	struct sockaddr_in peer_con;
-	int peer_con_size;
+	unsigned int peer_con_size;
 
 	/* The return type is "int" and the return codes are "errorcodes".  Even
 	 * though there aren't strictly the same type, I know they are, and using

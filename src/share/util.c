@@ -27,11 +27,6 @@
 #include <unistd.h>
 #include "def.h"
 
-/* inline function */
-int inline DEC_UNTIL_ZERO(int x) {
-	return (x>=1 ? x-1 : 0);
-}
-
 errorcode safe_free(void *memory) {
 
 	/* declare local variables */
